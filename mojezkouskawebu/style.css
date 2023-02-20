@@ -1,0 +1,104 @@
+
+body {
+  color: rgb(141, 50, 8);
+}
+.container {
+  max-width: 100%;
+  
+}
+
+h1 {
+ 
+  font-weight: bold;
+}
+.container-fluid {
+ 
+}
+.jumbotron {
+  background-image: url('img/pexels-vladimir3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  height: 98vh;
+}
+.nav-link {
+  color: rgb(141, 50, 8);
+  text-transform: uppercase;
+}
+.nav-link:hover{
+  color: rgb(114, 94, 94);
+}
+nav {
+  padding-bottom: 20px;
+}
+.products {
+  display: grid;
+ grid-gap: 30px;
+ 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 600px;
+}
+p {
+  width:70%;
+  align-items: center;
+}
+
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.first-img {
+  
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end:3;
+ 
+}
+.second-img {
+  
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  
+}
+.third-img {
+  
+  grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+ 
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 400px) and (max-width: 900px) {
+  .jumbotron {
+    height: 400px;
+  }
+  }
+  @media only screen and (max-width: 399px) {
+    .jumbotron {
+      height: 300px;
+    }
+    }
+   
