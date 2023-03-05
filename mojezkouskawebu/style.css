@@ -1,15 +1,22 @@
 
 body {
   color: rgb(141, 50, 8);
+  font-family:"Poppins", sans-serif;
 }
 .container {
   max-width: 100%;
+  background-color:rgb(209, 204, 192);
   
 }
 
 h1 {
  
   font-weight: bold;
+}
+.item-text{
+  text-align: center;
+  margin: auto;
+  
 }
 .container-fluid {
  
@@ -31,25 +38,60 @@ h1 {
 nav {
   padding-bottom: 20px;
 }
+.text-center {
+  margin: auto;
+}
+.about {
+  display:flex;
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
+  padding: 30px;
+  color: white;
+  background-color:rgb(116, 67, 44);
+}
+.about-header {
+  margin-top: 30px;
+}
+.quote {
+  margin: 20px;
+  padding-left: 80px;
+}
+
+.about-text {
+ display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+ 
+ 
+}
+.avatar {
+  box-shadow: 4px 4px 10px rgb(100, 61, 43);;
+}
 .products {
   display: grid;
- grid-gap: 30px;
- 
+ grid-gap: 40px;
+ margin: auto;
+ width:80vw;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 600px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
-p {
-  width:70%;
-  align-items: center;
+.gallery-item {
+  
 }
 
-
-.img {
+.gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 1.5s;
   
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
 .first-img {
   
@@ -76,17 +118,66 @@ p {
  
 }
 
+a:link{
+  text-decoration:none;
+}
 
+.about-paragraph {
+  width:80%;
+  align-items: center;
+}
+.article-first-part {
+  display: flex;
+  
+}
+.section-article {
+  height: 50vh;
+  width: 80vw;
+  
  
+  margin: auto;
+  border: solid 2px rgb(141, 50, 8);
+}
+.article-heading {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.first-column-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:33%;
+padding: 10px;
+margin: 20px;
 
-
-
-
-
-
-
-
-
+}
+.article-list {
+ padding-bottom: 23px;
+}
+.second-column-text {
+  width:33%;
+  padding: 10px;
+  text-align:center;
+  margin: 20px;
+}
+.third-column-text {
+  width:33%;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+}
+.btn {
+  align-content: center;
+  background-color: rgb(141, 50, 8);
+  border:none;
+}
+.btn:hover {
+  background-color: rgb(114, 94, 94);
+}
+.buttons {
+  display: flex;
+  justify-content:space-around;
+}
 
 
 
@@ -95,6 +186,48 @@ p {
   .jumbotron {
     height: 400px;
   }
+  .about {
+    padding:10px;
+    height: 500px;
+    
+    
+  }
+  .quote {
+    margin: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+  .blockquote {
+font-size: 15px;
+  }
+  .about-header {
+   margin-top: 5px;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+  .about-text {
+    font-size: 15px;
+    width: 50%;
+   
+  }
+  .section-article {
+    height: 80vh;
+  }
+  }
+  .first-column-text {
+   
+    
+   
+    margin: 10px;
+  }
+  .second-column-text {
+    
+    margin: 10px;
+  }
+  .third-column-text {
+   
+    margin: 10px;
   }
   @media only screen and (max-width: 399px) {
     .jumbotron {
