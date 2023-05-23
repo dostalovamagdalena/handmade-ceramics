@@ -539,7 +539,7 @@ font-size: 15px;
       font-size: 15px;
     }
     body{
-      background-color: blue;
+      
     }
     .about {
       padding:10px;
@@ -590,11 +590,11 @@ font-size: 15px;
     }
     @media only screen and (max-width: 670px) {
       h1{
-        background-color: red;
+        
       }
       .about {
         flex-wrap: wrap;
-        height: 700px;
+        height: 800px;
         ;
       }
       .about-text {
@@ -612,6 +612,16 @@ font-size: 15px;
         grid-template-columns: repeat(auto-fill, 186px);
       }
       .section-article {
-        
+        height: 1000px;
+      }
+      .article-first-part {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .first-column-text {
+        width: 300px;
+      }
+      .second-column-text {
+        width: 300px;
       }
     }
