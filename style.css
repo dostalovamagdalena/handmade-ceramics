@@ -241,8 +241,8 @@ color:white;
 }
 .carousel {
   position: relative;
-  height: 426px;
-  width: 700px;
+  height: 70%;
+  width: 70%;
   filter: drop-shadow(0 0 10px rgba(156, 155, 155, 0.2));
   perspective: 100px;
   margin: auto;
@@ -560,15 +560,19 @@ font-size: 15px;
     .carousel-area {
       width: 100%;
       
+      display: flex;
+      justify-content: center;
+      
     }
     .carousel__viewport {
-      width: 600px;
+      
      
       
     }
     .carousel {
       display: flex;
-      justify-content: center;
+      width: 80%;
+     
       margin: auto;
     }
     .carousel_slide {
@@ -623,5 +627,18 @@ font-size: 15px;
       }
       .second-column-text {
         width: 300px;
+      }
+
+    }
+    @media only screen and (max-width: 450px) {
+      .carousel-area {
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+        
+      }
+      .carousel {
+        width: 90%;
       }
     }
